@@ -1,6 +1,6 @@
 from PyQt5.QtWidgets import QApplication, QWidget, QLineEdit, QPushButton, QLabel, QVBoxLayout
 import sys
-from api_key import API_KEY  # Importujemo API ključ iz外部nog fajla
+from api_key import API_KEY  # Importujemo API ključ
 import requests  # Biblioteka za slanje HTTP zahtjeva
 
 class Home(QWidget):
@@ -18,7 +18,7 @@ class Home(QWidget):
         self.setGeometry(250, 250, 500, 400)  # Pozicija (x, y) i dimenzije (širina, visina) - povećao visinu
 
     def initUI(self):
-        """Kreira i postavlja sve elemente korisničkog sučelja"""
+        """Kreira i postavlja sve elemente"""
         
         # Kreiramo label (tekst) za naslov aplikacije
         self.title = QLabel("🌍 Weather App")
@@ -268,4 +268,5 @@ if __name__ == "__main__":
     window.show()
     
     # Pokrećemo glavnu petlju aplikacije i čekamo dok korisnik ne zatvori prozor
+
     sys.exit(app.exec_())
