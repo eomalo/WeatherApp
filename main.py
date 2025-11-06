@@ -10,7 +10,7 @@ class Home(QWidget):
         """Konstruktor klase - poziva se kada se kreira novi objekat"""
         super().__init__()  # Pozivamo konstruktor roditeljske klase (QWidget)
         self.settings()  # Postavljamo osnovne postavke prozora
-        self.initUI()  # Inicijalizujemo korisničko sučelje
+        self.initUI()  # Inicijalizujemo korisničko 
 
     def settings(self):
         """Postavlja osnovne parametre prozora"""
@@ -270,3 +270,4 @@ if __name__ == "__main__":
     # Pokrećemo glavnu petlju aplikacije i čekamo dok korisnik ne zatvori prozor
 
     sys.exit(app.exec_())
+
